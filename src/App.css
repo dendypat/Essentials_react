@@ -1,50 +1,10 @@
-#product_image {
-  height: auto;
-  width: 150px;
-  display: block;
+.App {
+  font-family: Indie Flower, sans-serif;
+  /* background: url('/images/herbs.jpeg'); */
+  position: fixed;
+  min-width: 100%;
+  min-height: 100%;
+  background-size: cover;
+  background-position: center;
 }
 
-#product_name {
-  font-size: 25px;
-  padding: 10px;
-}
-
-#product_price {
-  padding: 5px;
-}
-
-#product_description {
-  position: absolute;
-  left: 38%;
-  transform: translate(-50%);
-  color: bisque;
-  font-size: 20px;
-}
-
-iframe {
-  padding: 10px;
-}
-
-.wrapper {
-  font-family: sans-serif;
-  width: 70%;
-  margin: 0 auto;
-  transform: translate(-50%,);
-}
-
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  height: 100%;
-  width: 80%;
-  opacity: 0;
-  transition: .5s ease;
-  background-color: black;
-}
-
-.wrapper:hover .overlay {
-  opacity: 1;
-}
