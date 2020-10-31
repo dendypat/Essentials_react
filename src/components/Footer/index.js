@@ -6,7 +6,7 @@ export default function Footer({children, ...restProps}) {
 }
 
 Footer.Wrapper = function FooterWrapper({children, ...restProps}) {
-  return <Wrapper {...restProps}>{children}</Container>
+  return <Wrapper {...restProps}>{children}</Wrapper>
 }
 
 Footer.Row = function FooterRow({children, ...restProps}) {
@@ -24,3 +24,4 @@ Footer.Link = function FooterLink({children, ...restProps}) {
 Footer.Title = function FooterTitle({children, ...restProps}) {
   return <Title {...restProps}>{children}</Title>
 }
+

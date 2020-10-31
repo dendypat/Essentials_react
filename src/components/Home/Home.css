@@ -1,37 +1,32 @@
-*{
-  margin: 0;
-  padding: 0;
-  width: 100%;
-}
 
-.Home {
+.homeContainer {
   font-family: Indie Flower, sans-serif;
-  /* background: url('/images/herbs.jpeg'); */
-  position: fixed;
-  min-width: 100%;
-  min-height: 100%;
+  background: url('/images/herbs.jpg');
+  /*\ opacity: ; */
+  position: relative;
+  background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
 }
 
-#product_image {
+.product_image {
   height: auto;
-  width: 150px;
+  width: 100px;
   display: block;
+  background-color: antiquewhite;
 }
 
-#product_name {
-  font-size: 25px;
+.product_name {
+  font-size: 10 px;
   padding: 10px;
+  background-color: rgba(231, 204, 204, 0.3);
 }
 
-#product_price {
+.product_price {
   padding: 5px;
 }
 
-#product_description {
+.product_description {
   position: absolute;
-  left: 38%;
   transform: translate(-50%);
   color: bisque;
   font-size: 20px;
@@ -41,7 +36,7 @@ iframe {
   padding: 20px;
 }
 
-.wrapper {
+.homeWrapper {
   font-family: sans-serif;
   width: 70%;
   margin: 0 auto;
@@ -61,7 +56,7 @@ iframe {
   background-color: black;
 }
 
-.wrapper:hover .overlay {
+.homeWrapper:hover .overlay {
   opacity: 1;
 }
 

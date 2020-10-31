@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
+// import { CardImg } from 'reactstrap'
 import './Home.css'
+// import { Footer } from 'src/components/Footer/index.js'
 
 class Home extends Component {
   constructor(props) {
@@ -42,22 +44,22 @@ class Home extends Component {
 
     const product_list = this.state.products.map(product => {
       return (
-        <div className="Home container">
+        <div className="HomeContainer">
           <div className="row">
             <div className="col">
-              <div className="wrapper">
-                <img src={product.image} alt={product.name} id="product_image"></img>
+              <div className="homeWrapper">
+                <img src={product.image} alt={product.name} className="product_image"></img>
               </div>
               <div className="row">
                 <div className="col">
-                  <h2 id="product_name">{product.name}</h2>
+                  <h2 className="product_name">{product.name}</h2>
                 </div>
                 <div className="col">
-                  <h3 id="product_price">{product.price}</h3>
+                  <h3 className="product_price">{product.price}</h3>
                 </div>
               </div>
               <div className="overlay">
-                <div className="col-5" id="product_description">
+                <div className="product_description">
                   <p>{product.description}</p>
                 </div>
               </div>
@@ -68,7 +70,7 @@ class Home extends Component {
     })
 
     return (
-      <div key={product_list.id} className="container" >
+      <div key={product_list.id} className="homeContainer" >
         <div className="row">
           <div className="col">
             <div className="media">
@@ -76,13 +78,14 @@ class Home extends Component {
             </div>
           </div>
           <div className="row" id="video_caption">
-            <span className="mx-auto">Bacon ipsum dolor amet hamburger jerky pork loin spare ribs, ball tip short ribs tri-tip corned beef sirloin. Burgdoggen strip steak tri-tip, shank pork belly pork frankfurter bresaola. Prosciutto salami burgdoggen, tri-tip alcatra meatloaf fatback pig short ribs ball tip pastrami. </span>
+            <p className="mx-auto">Bacon ipsum dolor amet hamburger jerky pork loin spare ribs, ball tip short ribs tri-tip corned beef sirloin. Burgdoggen strip steak tri-tip, shank pork belly pork frankfurter bresaola. Prosciutto salami burgdoggen, tri-tip alcatra meatloaf fatback pig short ribs ball tip pastrami. </p>
           </div>
         </div>
         <h1>Featured Products</h1>
         <div className="row">
           {product_list}
         </div>
+      {/* <Footer /> */}
       </div>
     );
   }

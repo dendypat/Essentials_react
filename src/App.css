@@ -1,10 +1,5 @@
 .App {
   font-family: Indie Flower, sans-serif;
   /* background: url('/images/herbs.jpeg'); */
-  position: fixed;
-  min-width: 100%;
-  min-height: 100%;
-  background-size: cover;
-  background-position: center;
-}
 
+}
