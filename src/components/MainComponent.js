@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Navbar from './Navbar/Navbar'
 import Home from './Home/HomeComponent';
 import Contact from './Contact/ContactComponent';
+import Footer from './Footer/FooterComponent';
 
 class Main extends Component {
   constructor(props) {
@@ -14,6 +15,8 @@ class Main extends Component {
           <div className="container">
             <Navbar />
             <Home />
+            <Contact />
+            <Footer />
           </div>
     )
   }

@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
-// import { CardImg } from 'reactstrap'
+import { CardImg } from 'reactstrap'
 import './Home.css'
-// import { Footer } from 'src/components/Footer/index.js'
 
 class Home extends Component {
   constructor(props) {
@@ -85,9 +84,7 @@ class Home extends Component {
         <div className="row">
           {product_list}
         </div>
-      {/* <Footer /> */}
       </div>
     );
-  }
-}
-export default Home
+
+    export default Home;
